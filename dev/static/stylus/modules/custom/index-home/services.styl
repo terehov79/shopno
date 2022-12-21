@@ -1,0 +1,116 @@
+.services
+  width: 100%;
+  display flex
+  flex-direction column
+  justify-content: center;
+  align-items: center;
+  padding-bottom 120px;
+  @media $sm-and-smaller
+    padding-bottom 50px
+  &--wrap
+    width: 100%;
+    padding: 100px 0 0;
+    @media $sm-and-smaller
+      padding-top: 50px;
+  &__title
+    @extend .about__title
+  &__text
+    @extend .about__text
+  &_block
+    width 100%
+    height 420px
+    position relative
+    overflow hidden
+    margin-bottom 30px
+    &--active
+      .services_block__info
+        right: 0;
+    img
+      width: 101%;
+      height: 100%;
+      object-fit cover
+      object-position top left
+    &__shadow
+      width: 100%;
+      height: 100%;
+      position absolute
+      top 0
+      left 0
+      z-index 1
+      &::before
+        content ""
+        position absolute
+        width 100%
+        height: 100%;
+        top 0
+        left 0
+        background-color rgba(0,0,0,0.6)
+    &__main
+      width 100%
+      height: 100%;
+      display flex
+      flex-direction column
+      justify-content: flex-end;
+      align-items: flex-start;
+      position relative
+      z-index 2
+      padding: 0 65px 65px 65px
+      color white
+    &__title
+      font-size 18px
+      font-weight: 800;
+    &__text
+      font-size 16px
+      padding 30px 0 60px 0
+    &__know
+      display flex
+      justify-content flex-start
+      align-items center
+      font-size 19px
+      text-transform uppercase
+      text-decoration: none;
+      color white
+      transition transition
+      &:hover
+        color baseCyan
+      svg
+        fill white
+        width 40px
+        height: 25px;
+        margin-left 10px
+        transition transition
+      &:hover svg
+        fill baseCyan
+    &__info
+      width: 100%;
+      height: 100%;
+      position absolute
+      top 0
+      right 100%
+      z-index 3
+      background-color baseCyan
+      display: flex;
+      flex-direction column
+      justify-content: space-between;
+      align-items: flex-start;
+      padding 50px
+      transition transition
+    &__up
+      width 100%
+    &__title2
+      font-size 20px
+      font-weight: 800;
+      padding-bottom 40px
+    &__text2
+      font-size 16px
+      line-height: 2;
+      height: 150px;
+      overflow: hidden;
+    &__close
+      svg
+        fill baseGreyDark
+        width: 40px;
+        height: 25px;
+        transition transition
+      &:hover svg
+        fill white

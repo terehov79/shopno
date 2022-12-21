@@ -1,0 +1,28 @@
+.about--wrap#about
+  .container
+    .row
+      .col-12
+        .about
+          h2._title= aboutInfo[0]
+          p._text= aboutInfo[1]
+      .col-lg-6.col-md-12.col-12
+        .about_slider
+          .swiper-container
+            .swiper-wrapper
+              .swiper-slide
+                .about_slide
+                  img(src="static/img/content/about_slide.png" alt="Image Title")
+              .swiper-slide
+                .about_slide
+                  img(src="static/img/content/about_slide.png" alt="Image Title")
+              .swiper-slide
+                .about_slide
+                  img(src="static/img/content/about_slide.png" alt="Image Title")
+            .swiper-pagination
+      .col-lg-6.col-md-12.col-12
+        .about_main
+          h3._title= aboutSub[0]
+          p._text= aboutText[0]
+          p._text= aboutText[1]
+          h4._sub= aboutSub[1]
+          p._text= aboutText[2]

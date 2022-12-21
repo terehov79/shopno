@@ -1,0 +1,47 @@
+.says--wrap#says
+  .container
+    .row
+      .col-12
+        .says
+          h2._title= saysInfo[0]
+          p._text= saysInfo[1]
+      .col-lg-5.col-md-12.col-12
+        .says_slider
+          .swiper-container
+            .swiper-wrapper
+              .swiper-slide
+                .says_slide
+                  img(src="static/img/content/team01.png" alt="Image Title")
+              .swiper-slide
+                .says_slide
+                  img(src="static/img/content/team02.png" alt="Image Title")
+              .swiper-slide
+                .says_slide
+                  img(src="static/img/content/team03.png" alt="Image Title")
+              .swiper-slide
+                .says_slide
+                  img(src="static/img/content/team04.png" alt="Image Title")
+              .swiper-slide
+                .says_slide
+                  img(src="static/img/content/team05.png" alt="Image Title")
+            .swiper-pagination
+      .col-lg-7.col-md-12.col-12
+        .says_slider2
+          .swiper-container
+            .swiper-wrapper
+              -for (var a = 0; a < 5; a++)
+                .swiper-slide
+                  .says_slide2
+                    ._name
+                      h3._title
+                        | AL RAYHAN
+                      h3._job
+                        | / UI Designer
+                    p._text
+                      | Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    +stars(5)
+          .butt_nav
+            button(type="button" name="prev").btn_nav.btn-prev
+              +icon('arrow')
+            button(type="button" name="next").btn_nav.btn-next
+              +icon('arrow')

@@ -1,0 +1,25 @@
+extends ../layout/main
+
+block variables
+  - var title = 'SHOPNO-Homepage'
+  - var pageClass = 'index-page'
+
+block content
+  - var welcomeInfo = ['Say Hello to', 'SHOPNO!', 'Agency', 'CORPORATE SHOPNO Theme']
+  - var aboutInfo = ['About Us', 'Lorem ipsum dolor sit amet event landing template']
+  - var aboutSub = ['We Actually Do amazing works', 'why we are the great?']
+  - var aboutText = ['A visual approach is an approach to a runway at an airport conducted under instrument flight rules. The pilot must at all times have either the airport or the preceding aircraft in approach correct sight. conducted under instrument flight rules.', 'The pilot must at all times why we are the great?', 'Preceding aircraft in approach correct sight. conducted under instrument flight rules.', 'A visual approach is an approach to a runway at an airport conducted under instrument flight rules. The preceding aircraft in approach correct sight.']
+  - var featuredInfo = ['featured works', 'Lorem ipsum dolor sit amet event landing template']
+  - var servicesInfo = ['our services', 'Lorem ipsum dolor sit amet event landing template']
+  - var teamInfo = ['small team', 'Lorem ipsum dolor sit amet event landing template']
+  - var saysInfo = ['what they says', 'Lorem ipsum dolor sit amet event landing template']
+  include ../custom/index-home/welcome
+  include ../custom/index-home/about
+  include ../custom/index-home/featured
+  include ../custom/index-home/services
+  include ../custom/index-home/team
+  include ../custom/index-home/says
+  include ../custom/index-home/sponsor
+  include ../custom/index-home/location
+
+block script

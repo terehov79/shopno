@@ -1,0 +1,43 @@
+.location#location
+  .container
+    .row
+      .col-lg-7.col-md-12
+        form.location-form
+          ._up
+            label._label
+              input(type='text' name='name' placeholder='Name*')._input
+            label._label
+              input(type='text' name='subject' placeholder='Subject*')._input
+            label._label
+              input(type='email' name='email' placeholder='E-mail*')._input
+            ._label
+              textarea(name='message' placeholder='Message*')._area
+          ._btn
+            button(type='submit' name='submit')._submit.btn_global
+              | send message
+      .col-lg-5.col-md-12
+        .location-map
+          p._text
+            | Adress line 1
+          p._text
+            | Adress line 2
+          p._text
+            | Phone:
+            a(href="tel:+548945645")
+              | +548 945645
+          p._text
+            | Fax:
+            a(href="tel:+45645654546")
+              | +456456 54546
+          br
+          p._text
+            | Web:
+            a(href="www.designagency.net")
+              | www.designagency.net
+          p._text
+            | E-mail:
+            a(href="mailto:info@designagency.net")
+              | info@designagency.net
+          br
+          ._map
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10381.910097848235!2d26.96851814564614!3d49.418785490986735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473206f427f60c5b%3A0xc90c9d19b7191ae7!2sKhmelnytsky%20Regional%20Philharmonic!5e0!3m2!1sru!2sua!4v1610308128611!5m2!1sru!2sua' width='600' height='450' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0')

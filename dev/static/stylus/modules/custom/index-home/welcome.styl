@@ -1,0 +1,51 @@
+.welcome
+	width 100%
+	min-height 100vh
+	display flex
+	flex-direction column
+	justify-content center
+	align-items center
+	position relative
+	&::before
+		content ''
+		size(90px, 103px)
+		position absolute
+		right 15%
+		bottom 25%
+		background-image url("../img/general/cup.png")
+		background-repeat no-repeat
+		background-position center center
+		background-size contain
+		@media $xs-and-smaller
+			size(50px, 60px)
+			right 30px
+			bottom 30px
+		@media $sm-and-smaller
+			size(40px, 55px)
+			right 30px
+			bottom 180px
+	&--wrap
+		width 100%
+		background-color baseGreyLight
+	&__title
+		width 100%
+		text-align center
+		color baseGreyDark
+		text-transform uppercase
+		font-weight: 800;
+		text-shadow: 4px 4px 4px rgba(150, 150, 150, 0.42);
+		@media $md-and-smaller
+			font-size 36px
+		@media $xs-and-smaller
+			font-size 20px
+		@media $sm-and-smaller
+			padding-top: 80px;
+			font-size 28px
+	&__bg
+		background-color baseCyan
+		padding: 3px 5px;
+		margin 0 5px
+	.btn_global
+		margin-top 140px
+		@media $sm-and-smaller
+			margin-bottom 30px

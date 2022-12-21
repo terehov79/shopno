@@ -1,0 +1,56 @@
+.about
+  width 100%
+  display flex
+  flex-direction column
+  justify-content: center;
+  align-items: center;
+  padding-bottom 150px
+  @media $sm-and-smaller
+    padding-bottom: 50px;
+  &--wrap
+    width 100%
+    padding-top 100px
+    @media $sm-and-smaller
+      padding-top: 50px;
+  &__title
+    font-size 38px
+    font-weight: 800;
+    text-transform: uppercase;
+    color baseGrayText
+    @media $xs-and-smaller
+      text-align center
+    @media $sm-and-smaller
+      font-size 28px
+  &__text
+    font-size 18px
+    text-transform uppercase
+    line-height: 1.8;
+    @media $xs-and-smaller
+      text-align center
+    @media $sm-and-smaller
+      font-size 15px
+      text-align: center;
+  &_main
+    width 100%
+    &__title
+      font-size 20px;
+      text-transform: uppercase;
+      margin-bottom 15px
+    &__sub
+      font-size 17px;
+      text-transform: uppercase;
+      margin-bottom 15px
+    &__text
+      font-size 16px;
+      line-height: 1.9;
+      margin 30px 0
+  &_slider
+    width: 100%;
+    .swiper-container
+      padding-bottom: 50px;
+    .swiper-pagination
+      bottom 15px
+  &_slide
+    width 100%
+    display: flex;
+    justify-content: center;

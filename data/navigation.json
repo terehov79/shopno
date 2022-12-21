@@ -1,0 +1,10 @@
+{
+  "navPages": {
+    "About Us" : "#about",
+    "Featured Works" : "#featured",
+    "Our Services" : "#services",
+    "Small Team" : "#team",
+    "What They Says" : "#says",
+    "Contact" : "#location"
+  }
+}
